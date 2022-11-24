@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/caeser.css">
+    <title>Caeser Cypher</title>
+</head>
+
+
+<body>
+
+    <div class="vetorBackground">
+        <img src="./fotos/vector.webp" alt="Background">
+    </div>
+
+    <nav id="menu-h">
+        <ul>
+            <li><a href="./index.html">Retroceder</a></li>
+            <li><a href="#bgSobre">Sobre</a></li>
+            <li><a href="#bgCifrar">Cifrar</a></li>
+            <li><a href="#bgDecifrar">Decifrar</a></li>
+        </ul>
+
+    </nav>
+
+
+    <div id="bgSobre"></div>
+    <div class="box">
+        <h1 class="h1_bgSobre">
+            <a href="" id="close">X</a>
+            <p2>Cifra de César</p2>
+            <p style="text-indent :2em;">Em criptografia, a Cifra de César, também conhecida como cifra de troca, código
+                de César ou troca de
+                César, é
+                uma das mais simples e conhecidas técnicas de criptografia. </p>
+            <p style="text-indent :2em;"> É um tipo de cifra de substituição na
+                qual
+                cada
+                letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de
+                vezes.
+            </p>
+            <p style="text-indent :2em;">Por exemplo, com uma troca de três posições, A seria substituído por D, B se
+                tornaria E, e assim por
+                diante.
+                O nome do método é em homenagem a Júlio César, que o usou para se comunicar com os seus generais.
+            </p>
+            <p style="text-indent :2em;">O processo de criptografia de uma cifra de César é frequentemente incorporado
+                como parte de esquemas
+                mais
+                complexos, como a cifra de Vigenère, e continua tendo aplicações modernas, como no sistema ROT13.</p>
+            <p style="text-indent :2em;">
+                Como
+                todas
+                as cifras de substituição monoalfabéticas, a cifra de César é facilmente decifrada e na prática não
+                oferece
+                essencialmente nenhuma segurança na comunicação.</p>
+        </h1>
+    </div>
+
+
+    <div id="bgCifrar"></div>
+    <div class="boxCifrar">
+        <h1 class="h1_boxCifrar">
+            <a href="" id="close">X</a>
+            <label for="mensagem">Insira o texto a ser cifrado</label>
+            <input type="text" id="textoCifrar" placeholder="Insira o texto a ser cifrado">
+            <label for="mensagem">Deslocamento</label>
+            <input type="number" id="deslocamentoCifrar" placeholder="Deslocamento">
+            <button onclick="cifrar()" style="
+                background-color: #ffffff;
+                border-radius: 15px;
+                color: #ff0000;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 100px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+                ">Cifrar</button>
+
+            <p5 id="resultadoCifrar"></p5>
+        </h1>
+    </div>
+
+
+    <div id="bgDecifrar"></div>
+    <div class="boxDecifrar">
+        <h1 class="h1_boxDecifrar">
+            <a href="" id="close">X</a>
+            <label for="mensagem">Insira o texto a ser decifrado</label>
+            <input type="text" id="textoDecifrar" placeholder="Insira o texto a ser decifrado">
+            <label for="mensagem">Deslocamento</label>
+            <input type="number" id="deslocamentoDecifrar" placeholder="Deslocamento"> 
+            <button onclick="decifrar()" style="
+                background-color: #ffffff;
+                border-radius: 15px;
+                color: #ff0000;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 100px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+                ">Decifrar</button>
+
+            <p5 id="resultadoDecifrar"></p5>
+        </h1>
+    </div>
+
+
+    <script src="./js/caeser.js"></script>
+
+</body>
+
+</html>

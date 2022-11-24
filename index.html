@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EfolioA - Segurança em Redes</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/cdfd3dd130.js" crossorigin="anonymous"></script>  
+</head>
+
+<body>
+    <div class="container">
+        <img src="./fotos/menu.png" class="menu-icon" onclick=openMenu()>
+        <div class="menu-box" id="menu">
+            <div class="right-links">
+                <a href="construcao.html">Ajuda</a>
+                <img src="./fotos/close.png" onclick="closeMenu()">
+            </div>
+
+            <ul id="nav">
+                <li><a href="construcao.html">Inicio <i class="fa-solid fa-person-digging"></i></a></li>
+                <li><a href="construcao.html">Sobre o Trabalho <i class="fa-solid fa-person-digging"></i></a></li>
+                <li><a href="#">Chave Simétrica</a>
+                    <ul>
+                        <li><a href="caeser.html">Cifra de César</a></li>
+                        <li><a href="construcao.html">RC4 <i class="fa-solid fa-person-digging"></i></a></li></a></li>
+                        <li><a href="construcao.html">3DES <i class="fa-solid fa-person-digging"></i></a></li>
+                        <li><a href="construcao.html">AES <i class="fa-solid fa-person-digging"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Chave Assimétrica</a>
+                    <ul>
+                        <li><a href="construcao.html">RSA <i class="fa-solid fa-person-digging"></i></a></li>
+                        <li><a href="construcao.html">ElGamal <i class="fa-solid fa-person-digging"></i></a></li>
+                        <!-- <li><a href="#">SEO</a></li>
+                        <li><a href="#">Sistemas</a></li> -->
+                    </ul>
+                </li>
+                <li><a href="sobre.html">Sobre o Autor</a></li>
+                <li><a href="construcao.html">Contato <i class="fa-solid fa-person-digging"></i></a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script>
+
+        var menu = document.getElementById("menu");
+
+        function closeMenu() {
+            menu.style.top = "-100vh";
+        }
+
+        function openMenu() {
+            menu.style.top = "17%";
+        }
+
+    </script>
+
+</body>
+
+</html>
