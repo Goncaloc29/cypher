@@ -1,0 +1,256 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.vetorBackground {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+}
+
+.vetorBackground img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+#menu-h {
+    background-color: black;
+}
+
+#menu-h ul {
+    max-width: 338px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(125, 91, 12);
+    color: rgb(224, 193, 18);
+}
+
+.h1_bgSobre {
+    width: fit-content;
+    color: #fff;
+    background-color: black;
+    /* opacity: 0.9; */
+    padding: 25px;
+    border-style: solid;
+    /* border-width: 5px; */
+    border-color: black;
+}
+
+p {
+    padding: 18px;
+    width: fit-content;
+    text-align: justify;
+    font-family: 'Times New Roman';
+    font-size: 16pt;
+}
+
+p2 {
+    font-family: Arial;
+    font-size: 30pt;
+    color: #fff;
+    text-align: left;
+    /* text-shadow: 5px 5px 1px #aaa; */
+}
+
+
+
+#bgSobre,
+#bgCifrar,
+#bgDecifrar {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(53, 54, 51, 0.5);
+    display: none;
+}
+
+#bgSobre:target,
+#bgCifrar:target,
+#bgDecifrar:target {
+    display: block;
+}
+
+#bgSobre:target~.box,
+#bgCifrar:target~.boxCifrar,
+#bgDecifrar:target~.boxDecifrar {
+    top: 150px;
+    transition: all 0.5s;
+    transition-delay: 0.5s;
+}
+
+.box {
+    background: url("../fotos/vector_caixa.jpg");
+    opacity: 0.8;
+    width: 780px;
+    height: 405px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top: -1000px;
+}
+
+.box img {
+    width: 100%;
+    position: absolute;
+}
+
+#close {
+    color: #fff;
+    font-family: 'Arial';
+    text-decoration: none;
+    font-size: 35px;
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    right: 0;
+    top: 4px;
+}
+
+#close:hover {
+    opacity: 0.6;
+}
+
+.divTexto {
+    z-index: -1;
+}
+
+.boxCifrar {
+    background: url("../fotos/vector_caixa.jpg");
+    width: 720px;
+    height: 405px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top: -1000px;
+}
+
+.boxCifrar img {
+    width: 100%;
+    position: absolute;
+}
+
+#close {
+    color: #fff;
+    font-family: 'Arial';
+    text-decoration: none;
+    font-size: 35px;
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    right: 0;
+    top: 4px;
+}
+
+#close:hover {
+    opacity: 0.6;
+}
+
+.divTexto {
+    z-index: -1;
+}
+
+.boxDecifrar {
+    background: url("../fotos/vector_caixa.jpg");
+    width: 720px;
+    height: 405px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top: -1000px;
+}
+
+.boxDecifrar img {
+    width: 100%;
+    position: absolute;
+}
+
+#close {
+    color: #fff;
+    font-family: 'Arial';
+    text-decoration: none;
+    font-size: 35px;
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    right: 0;
+    top: 4px;
+}
+
+#close:hover {
+    opacity: 0.6;
+}
+
+.divTexto {
+    z-index: -1;
+}
+
+label {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-size: 150%;
+}
+
+input {
+    position: relative;
+    left: 20%;
+    height: 80%;
+    width: 60%;
+    border-radius: 100px;
+}
+
+input[type="text" i],
+input[type="number" i] {
+    padding: 5px 2px;
+}
+
+button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p5 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

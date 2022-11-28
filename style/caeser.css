@@ -56,10 +56,10 @@
     width: fit-content;
     color: #fff;
     background-color: black;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     padding: 25px;
     border-style: solid;
-    border-width: 5px;
+    /* border-width: 5px; */
     border-color: black;
 }
 
@@ -76,7 +76,7 @@ p2 {
     font-size: 30pt;
     color: #fff;
     text-align: left;
-    text-shadow: 5px 5px 1px #aaa;
+    /* text-shadow: 5px 5px 1px #aaa; */
 }
 
 
@@ -235,7 +235,8 @@ input {
     border-radius: 100px;
 }
 
-input[type="text" i], input[type="number" i] {
+input[type="text" i],
+input[type="number" i] {
     padding: 5px 2px;
 }
 
@@ -244,7 +245,7 @@ button {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-} 
+}
 
 p5 {
     color: rgb(255, 255, 255);

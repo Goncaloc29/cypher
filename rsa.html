@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/rsa.css">
+    <title>RSA</title>
+</head>
+
+
+<body>
+
+    <div class="vetorBackground">
+        <img src="./fotos/vector.webp" alt="Background">
+    </div>
+
+    <nav id="menu-h">
+        <ul>
+            <li><a href="./index.html">Retroceder</a></li>
+            <li><a href="#bgSobre">Sobre</a></li>
+            <li><a href="./rsadecifrar.html">Cifrar/ Decifrar</a></li>        
+        </ul>
+
+    </nav>
+
+
+    <div id="bgSobre"></div>
+    <div class="box">
+        <h1 class="h1_bgSobre">
+            <a href="" id="close">X</a>
+            <p2>RSA</p2>
+            <p style="text-indent :2em;">RSA (Rivest-Shamir-Adleman) é um dos primeiros sistemas de criptografia de chave pública e é amplamente utilizado para
+            transmissão segura de dados. Neste sistema de criptografia, a chave de encriptação é pública e é diferente da chave de
+            decriptação que é secreta (privada). No RSA, esta assimetria é baseada na dificuldade prática da fatorização do produto
+            de dois números primos grandes, o "problema de fatoração".</p>
+            <p style="text-indent :2em;"> É considerado dos mais seguros, já que mandou por terra todas as tentativas de quebrá-lo. Foi também o primeiro
+            algoritmo a possibilitar criptografia e assinatura digital, e uma das grandes inovações em criptografia de chave
+            pública.
+            </p>
+            <p style="text-indent :2em;">Um usuário do RSA cria e publica uma chave (chave pública) baseada em dois números primos grandes, junto com um valor
+            auxiliar. Os números primos devem ser mantidos secretos. Qualquer um pode usar a chave pública para encriptar a
+            mensagem, mas com métodos atualmente publicados, e se a chave pública for muito grande, apenas alguém com o conhecimento
+            dos números primos pode decodificar a mensagem de forma viável. Quebrar a encriptação RSA é conhecido como problema RSA.
+            Se ele for tão difícil quanto o problema de fatoramento, ele permanece como uma questão em aberto.
+            </p>
+            <p style="text-indent :2em;">O RSA é um algoritmo relativamente lento e, por isso, é menos usado para criptografar diretamente os dados do usuário.
+            Mais frequentemente, o RSA passa chaves criptografadas compartilhadas para criptografia de chave simétrica que, por sua
+            vez, pode executar operações de criptografia-descriptografia em massa a uma velocidade muito maior.</p>
+            
+        </h1>
+    </div>
+
+
+    <div id="bgCifrar"></div>
+    <div class="boxCifrar">
+
+        <!-- <h1 class="h1_boxCifrar">
+            <a href="" id="close">X</a>
+
+
+
+
+            
+            <label for="mensagem" style="
+            width: 370px;
+            margin-left: 0px;
+            ">Insira o texto a ser cifrado</label>
+            <input type="text" id="textoCifrar" placeholder="Insira o texto a ser cifrado">
+            <label for="mensagem" style="
+            width: 370px;
+            margin-left: 0px;
+            ">Deslocamento</label>
+            <input type="number" id="deslocamentoCifrar" placeholder="Deslocamento">
+            <button onclick="cifrar()" style="
+                background-color: #ffffff;
+                border-radius: 15px;
+                color: #ff0000;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 100px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+                ">Cifrar</button>
+
+            <p5 id="resultadoCifrar"></p5>
+        </h1> -->
+    </div>
+
+
+    <div id="bgDecifrar"></div>
+    <div class="boxDecifrar">
+        <h1 class="h1_boxDecifrar">
+            <a href="" id="close">X</a>
+            <label for="mensagem">Insira o texto a ser decifrado</label>
+            <input type="text" id="textoDecifrar" placeholder="Insira o texto a ser decifrado">
+            <label for="mensagem">Deslocamento</label>
+            <input type="number" id="deslocamentoDecifrar" placeholder="Deslocamento">
+            <button onclick="decifrar()" style="
+                background-color: #ffffff;
+                border-radius: 15px;
+                color: #ff0000;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 100px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+                ">Decifrar</button>
+
+            <p5 id="resultadoDecifrar"></p5>
+        </h1>
+    </div>
+
+
+    <script src="./js/caeser.js"></script>
+
+</body>
+
+</html>

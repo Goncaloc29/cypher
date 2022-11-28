@@ -1,0 +1,42 @@
+* {
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: goldenrod;
+}
+
+
+p {
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 100px;
+    margin-inline-end: 0px;
+    line-height: 30px;
+}
+
+label {
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background: black;
+    padding: 15px 40px;
+    border-radius: 25px;
+}
+
+
+.return_botton {
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+input {
+    cursor: pointer;
+}

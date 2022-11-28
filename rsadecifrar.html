@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decifrar</title>
+    <link rel="stylesheet" href="./style/rsadecifrar.css">
+</head>
+
+<body style="
+padding-left: 250px;
+">
+
+    
+    
+
+<a href="index.html" class="return_botton">Voltar ao menu principal</a>
+
+
+    <h1>RSA Encriptar</h1>
+    <p><label for="p">Primeiro primo</label>: <input type="text" id="p"> <label for="q">Segundo primo</label>: <input
+            type="text" id="q"> <!-- ou
+        <input type="button" value="escolha 2 primos ao acaso " onclick="generateRandom();"> -->
+    </p>
+
+    <p><label for="toEncrypt">Mensagem a encriptar</label>: <br><textarea id="toEncrypt" cols="83" rows="5"></textarea>
+    </p>
+
+    <p>
+        <input type="button" value="Encriptar" onclick="handleEncryption();">
+        <!-- <input type="button" value="Limpar"
+            onclick="document.getElementById('resultEn').innerHTML = ''; document.getElementById('statusEn').textContent = 'Not started yet.';"> -->
+    </p>
+
+    <p>Valor de P: <span id="pprime"> </span><br>Valor de Q: <span id="qprime"> </span><br>Chave publica: <span
+            id="nEnc"> </span><br>Chave privada: <span id="kEnc"> </span><br>Mensagem encriptada: <span id="gcdCheck">
+        </span><br> <span id="bpl"> </span></p>
+
+
+    <h1>RSA Desencriptar</h1>
+
+    <p>Chave privada: <br><label for="n">N</label>: <input type="text" id="n"> <label for="d">d</label>: <input
+            type="text" id="d"></p>
+
+    <p><label for="message">Mensagem a desencriptar:</label><br><textarea id="message" cols="54" rows="5"></textarea>
+    </p>
+
+    <p>
+        <input type="button" value="Desencriptar" onclick="handleDecryption();">
+        <!-- <input type="button" value="Limpar"
+            onclick="document.getElementById('result').innerHTML = ''; document.getElementById('status').textContent = 'not started yet.';"> -->
+    </p>
+
+    <p>Mensagem desencriptada: <span id="gcdCheck1">
+        </span><br> <span id="bpl"> </span></p>
+
+
+    <script src="./js/utils/bigInteger.js"></script>
+    <script src="./js/rsa.js"></script>
+    
+
+</body>
+
+</html>
